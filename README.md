@@ -27,6 +27,15 @@ Full frontend prototype built with **Next.js 16 + Tailwind CSS** using mocked/st
 ### Step 1.7 — IDE Sync & GitHub Push
 Project versioned with Git and pushed to GitHub. Local dev environment running at `http://localhost:3000`.
 
+### Step 2.1 — Backend API Routes (Path B: Full-Stack Next.js)
+API layer built inside Next.js using Route Handlers (App Router). No separate Express backend needed.
+
+- `GET /api/health` — health check endpoint
+- `GET /api/events` — returns full event list
+- `GET /api/events/[id]` — returns single event by ID
+- `frontend/.env.local` created with Supabase, Stripe, and app URL placeholders
+- Events listing page now fetches from `/api/events` instead of importing mock data directly
+
 ---
 
 ## 🔧 Frontend Tech Stack
@@ -102,11 +111,9 @@ App runs at **http://localhost:3000**
 
 ## 📋 Next Steps
 
-1. **Step 2.1** — Generate backend application
-2. **Step 2.2** — Local environment setup
-3. **Step 2.3** — Validate backend + frontend integration
-4. **Step 2.4** — Push changes to GitHub
-5. **Step 3.x** — Supabase DB connection + CRUD APIs
+1. ~~**Step 2.1** — Generate backend application~~ ✅ Done (Path B)
+2. ~~**Steps 2.2–2.4**~~ — Skipped (not needed for Path B)
+3. **Step 3.1** — Supabase DB connection + CRUD APIs
 6. **Step 4.x** — External API integration
 7. **Step 5.x** — Authentication (Supabase Auth)
 8. **Step 6.x** — Stripe payments

@@ -1,8 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import EventCard from "@/components/EventCard";
-import { mockEvents, Category } from "@/lib/mockData";
+import { Category, Event } from "@/lib/mockData";
 import { Search, SlidersHorizontal, MapPin } from "lucide-react";
 
 const CATEGORIES: { value: Category | "all"; label: string; color?: string }[] = [
@@ -17,8 +17,15 @@ const CATEGORIES: { value: Category | "all"; label: string; color?: string }[] =
 export default function EventsPage() {
   const [activeCategory, setActiveCategory] = useState<Category | "all">("all");
   const [searchQuery, setSearchQuery] = useState("");
+  const [events, setEvents] = useState<Event[]>([]);
 
-  const filtered = mockEvents.filter((e) => {
+  useEffect(() => {
+    fetch("/api/events")
+      .then((r) => r.json())
+      .then((data) => setEvents(data.events ?? []));
+  }, []);
+
+  const filtered = events.filter((e) => {
     const matchesCategory = activeCategory === "all" || e.category === activeCategory;
     const matchesSearch =
       searchQuery === "" ||
