@@ -1,0 +1,276 @@
+{
+  "meta": {
+    "name": "LastSeat Design System",
+    "version": "1.0.0",
+    "style": "neo-brutalist",
+    "description": "Multi-color, bold, energetic design system for last-minute event ticketing"
+  },
+  "tokens": {
+    "colors": {
+      "base": {
+        "black": "#0A0A0A",
+        "white": "#FFFFFF",
+        "cream": "#FAF6EF",
+        "cream-dark": "#F0E9DC"
+      },
+      "accent": {
+        "coral": "#FF4D4D",
+        "coral-light": "#FF8080",
+        "coral-dark": "#CC2A2A",
+        "yellow": "#FFD60A",
+        "yellow-light": "#FFE566",
+        "yellow-dark": "#C9A800",
+        "purple": "#B5A4F5",
+        "purple-light": "#D4CBF9",
+        "purple-dark": "#7C64ED",
+        "teal": "#00C9A7",
+        "teal-light": "#4DDFC7",
+        "teal-dark": "#009980",
+        "orange": "#FF8C42",
+        "orange-light": "#FFB07A",
+        "orange-dark": "#CC6318",
+        "blue": "#4D9EFF",
+        "blue-light": "#80BEFF",
+        "blue-dark": "#1A74CC"
+      },
+      "semantic": {
+        "bg-page": "#FAF6EF",
+        "bg-card": "#FFFFFF",
+        "bg-dark": "#0A0A0A",
+        "bg-muted": "#F0E9DC",
+        "text-primary": "#0A0A0A",
+        "text-secondary": "#555555",
+        "text-muted": "#888888",
+        "text-inverse": "#FFFFFF",
+        "border": "#0A0A0A",
+        "success": "#00C9A7",
+        "error": "#FF4D4D",
+        "warning": "#FFD60A",
+        "info": "#4D9EFF"
+      },
+      "categories": {
+        "sport": "#FF4D4D",
+        "music": "#FFD60A",
+        "theatre": "#B5A4F5",
+        "comedy": "#FF8C42",
+        "other": "#4D9EFF"
+      }
+    },
+    "typography": {
+      "fontFamilies": {
+        "display": "'Barlow Condensed', sans-serif",
+        "ui": "'Space Grotesk', sans-serif",
+        "mono": "'Space Mono', monospace"
+      },
+      "fontWeights": {
+        "regular": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700,
+        "extrabold": 800,
+        "black": 900
+      },
+      "typeScale": {
+        "display-2xl": { "size": "80px", "lineHeight": "88px", "weight": 900, "family": "display", "transform": "uppercase" },
+        "display-xl": { "size": "60px", "lineHeight": "68px", "weight": 800, "family": "display", "transform": "uppercase" },
+        "display-lg": { "size": "48px", "lineHeight": "56px", "weight": 800, "family": "display", "transform": "uppercase" },
+        "display-md": { "size": "36px", "lineHeight": "44px", "weight": 700, "family": "display", "transform": "uppercase" },
+        "heading-xl": { "size": "30px", "lineHeight": "38px", "weight": 700, "family": "ui", "transform": "none" },
+        "heading-lg": { "size": "24px", "lineHeight": "32px", "weight": 700, "family": "ui", "transform": "none" },
+        "heading-md": { "size": "20px", "lineHeight": "28px", "weight": 600, "family": "ui", "transform": "none" },
+        "heading-sm": { "size": "16px", "lineHeight": "24px", "weight": 600, "family": "ui", "transform": "none" },
+        "body-lg": { "size": "18px", "lineHeight": "28px", "weight": 400, "family": "ui", "transform": "none" },
+        "body-md": { "size": "16px", "lineHeight": "24px", "weight": 400, "family": "ui", "transform": "none" },
+        "body-sm": { "size": "14px", "lineHeight": "20px", "weight": 400, "family": "ui", "transform": "none" },
+        "label-lg": { "size": "14px", "lineHeight": "20px", "weight": 700, "family": "mono", "transform": "uppercase", "letterSpacing": "0.08em" },
+        "label-sm": { "size": "12px", "lineHeight": "16px", "weight": 700, "family": "mono", "transform": "uppercase", "letterSpacing": "0.08em" },
+        "caption": { "size": "12px", "lineHeight": "16px", "weight": 400, "family": "ui", "transform": "none" }
+      }
+    },
+    "spacing": {
+      "1": "4px",
+      "2": "8px",
+      "3": "12px",
+      "4": "16px",
+      "5": "20px",
+      "6": "24px",
+      "8": "32px",
+      "10": "40px",
+      "12": "48px",
+      "16": "64px",
+      "20": "80px",
+      "24": "96px"
+    },
+    "radii": {
+      "none": "0px",
+      "sm": "4px",
+      "md": "8px",
+      "lg": "12px",
+      "xl": "16px",
+      "full": "9999px"
+    },
+    "shadows": {
+      "sm": "2px 2px 0px #0A0A0A",
+      "md": "4px 4px 0px #0A0A0A",
+      "lg": "6px 6px 0px #0A0A0A",
+      "xl": "8px 8px 0px #0A0A0A",
+      "coral": "4px 4px 0px #FF4D4D",
+      "yellow": "4px 4px 0px #FFD60A",
+      "purple": "4px 4px 0px #B5A4F5",
+      "teal": "4px 4px 0px #00C9A7"
+    },
+    "sizing": {
+      "container-sm": "640px",
+      "container-md": "768px",
+      "container-lg": "1024px",
+      "container-xl": "1280px",
+      "container-2xl": "1440px",
+      "navbar-height": "64px",
+      "sidebar-width": "240px"
+    },
+    "borders": {
+      "default": "2px solid #0A0A0A",
+      "thin": "1px solid #0A0A0A",
+      "thick": "3px solid #0A0A0A"
+    }
+  },
+  "components": {
+    "Button": {
+      "variants": {
+        "primary": { "bg": "#FF4D4D", "text": "#0A0A0A", "border": "2px solid #0A0A0A", "shadow": "4px 4px 0px #0A0A0A" },
+        "secondary": { "bg": "#FFD60A", "text": "#0A0A0A", "border": "2px solid #0A0A0A", "shadow": "4px 4px 0px #0A0A0A" },
+        "ghost": { "bg": "transparent", "text": "#0A0A0A", "border": "2px solid #0A0A0A", "shadow": "4px 4px 0px #0A0A0A" },
+        "dark": { "bg": "#0A0A0A", "text": "#FFFFFF", "border": "2px solid #0A0A0A", "shadow": "4px 4px 0px #555555" },
+        "destructive": { "bg": "#FF4D4D", "text": "#FFFFFF", "border": "2px solid #CC2A2A", "shadow": "4px 4px 0px #CC2A2A" }
+      },
+      "sizes": {
+        "sm": { "height": "32px", "padding": "8px 16px", "fontSize": "12px", "fontFamily": "mono" },
+        "md": { "height": "40px", "padding": "10px 20px", "fontSize": "14px", "fontFamily": "mono" },
+        "lg": { "height": "48px", "padding": "12px 28px", "fontSize": "16px", "fontFamily": "mono" },
+        "xl": { "height": "56px", "padding": "16px 36px", "fontSize": "18px", "fontFamily": "mono" }
+      },
+      "states": {
+        "hover": "translate(-2px, -2px), shadow increases",
+        "active": "translate(2px, 2px), shadow shrinks to sm",
+        "disabled": "opacity: 0.4, cursor: not-allowed"
+      }
+    },
+    "Card": {
+      "default": {
+        "bg": "#FFFFFF",
+        "border": "2px solid #0A0A0A",
+        "borderRadius": "12px",
+        "shadow": "6px 6px 0px #0A0A0A",
+        "padding": "20px"
+      },
+      "featured": {
+        "bg": "#FFD60A",
+        "border": "2px solid #0A0A0A",
+        "borderRadius": "12px",
+        "shadow": "8px 8px 0px #0A0A0A"
+      },
+      "event": {
+        "bg": "#FFFFFF",
+        "border": "2px solid #0A0A0A",
+        "borderRadius": "12px",
+        "shadow": "6px 6px 0px #0A0A0A",
+        "imageAspectRatio": "16/9",
+        "hoverTransform": "translate(-2px, -2px)"
+      }
+    },
+    "Input": {
+      "default": { "border": "2px solid #0A0A0A", "bg": "#FFFFFF", "borderRadius": "8px", "padding": "10px 14px" },
+      "focus": { "border": "2px solid #FF4D4D", "shadow": "2px 2px 0px #FF4D4D" },
+      "error": { "border": "2px solid #FF4D4D", "bg": "#FFF0F0" },
+      "disabled": { "bg": "#F0E9DC", "text": "#888888" }
+    },
+    "Badge": {
+      "variants": {
+        "sport": { "bg": "#FF4D4D", "text": "#FFFFFF", "border": "2px solid #0A0A0A" },
+        "music": { "bg": "#FFD60A", "text": "#0A0A0A", "border": "2px solid #0A0A0A" },
+        "theatre": { "bg": "#B5A4F5", "text": "#0A0A0A", "border": "2px solid #0A0A0A" },
+        "comedy": { "bg": "#FF8C42", "text": "#FFFFFF", "border": "2px solid #0A0A0A" },
+        "other": { "bg": "#4D9EFF", "text": "#FFFFFF", "border": "2px solid #0A0A0A" },
+        "success": { "bg": "#00C9A7", "text": "#FFFFFF", "border": "2px solid #0A0A0A" },
+        "outline": { "bg": "transparent", "text": "#0A0A0A", "border": "2px solid #0A0A0A" }
+      },
+      "sizes": {
+        "sm": { "padding": "2px 8px", "fontSize": "12px", "borderRadius": "4px" },
+        "md": { "padding": "4px 12px", "fontSize": "14px", "borderRadius": "4px" }
+      }
+    },
+    "Avatar": {
+      "sizes": {
+        "sm": "32px",
+        "md": "40px",
+        "lg": "48px",
+        "xl": "64px"
+      },
+      "style": { "border": "2px solid #0A0A0A", "borderRadius": "9999px" }
+    },
+    "FilterChip": {
+      "default": { "bg": "#FFFFFF", "text": "#0A0A0A", "border": "2px solid #0A0A0A", "shadow": "2px 2px 0px #0A0A0A" },
+      "active": { "bg": "category-color", "text": "#0A0A0A", "border": "2px solid #0A0A0A", "shadow": "4px 4px 0px #0A0A0A" }
+    },
+    "Navbar": {
+      "bg": "#FAF6EF",
+      "borderBottom": "2px solid #0A0A0A",
+      "height": "64px",
+      "logoFont": "Barlow Condensed",
+      "logoWeight": 900
+    }
+  },
+  "utilities": {
+    "cssVariables": {
+      "variableMap": {
+        "--color-black": "#0A0A0A",
+        "--color-white": "#FFFFFF",
+        "--color-cream": "#FAF6EF",
+        "--color-coral": "#FF4D4D",
+        "--color-yellow": "#FFD60A",
+        "--color-purple": "#B5A4F5",
+        "--color-teal": "#00C9A7",
+        "--color-orange": "#FF8C42",
+        "--color-blue": "#4D9EFF",
+        "--color-text-primary": "#0A0A0A",
+        "--color-text-secondary": "#555555",
+        "--color-text-muted": "#888888",
+        "--color-border": "#0A0A0A",
+        "--shadow-sm": "2px 2px 0px #0A0A0A",
+        "--shadow-md": "4px 4px 0px #0A0A0A",
+        "--shadow-lg": "6px 6px 0px #0A0A0A",
+        "--shadow-xl": "8px 8px 0px #0A0A0A",
+        "--font-display": "'Barlow Condensed', sans-serif",
+        "--font-ui": "'Space Grotesk', sans-serif",
+        "--font-mono": "'Space Mono', monospace",
+        "--radius-sm": "4px",
+        "--radius-md": "8px",
+        "--radius-lg": "12px",
+        "--radius-full": "9999px"
+      }
+    },
+    "iconography": {
+      "library": "Lucide Icons",
+      "defaultSize": "20px",
+      "strokeWidth": 2,
+      "icons": {
+        "location": "map-pin",
+        "calendar": "calendar",
+        "ticket": "ticket",
+        "favorite": "heart",
+        "filter": "sliders-horizontal",
+        "search": "search",
+        "profile": "user",
+        "cart": "shopping-cart",
+        "confirmation": "check-circle",
+        "qrcode": "qr-code",
+        "close": "x",
+        "arrow": "chevron-right",
+        "back": "chevron-left",
+        "menu": "menu",
+        "settings": "settings",
+        "logout": "log-out"
+      }
+    }
+  }
+}
